@@ -74,13 +74,13 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold mb-4">Contact Information</h3>
                 <div className="space-y-4">
                   <a
-                    href="mailto:hello@example.com"
+                    href="mailto:saudalshamsi92@gmail.com"
                     className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
                   >
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <Mail className="w-5 h-5 text-primary" />
                     </div>
-                    <span>hello@example.com</span>
+                    <span>saudalshamsi92@gmail.com</span>
                   </a>
                   <div className="flex items-center gap-3 text-muted-foreground">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -95,7 +95,7 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
                 <div className="flex gap-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/TestWithSaud"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-lg bg-secondary hover:bg-primary/10 hover:border-primary/50 border border-border flex items-center justify-center transition-all duration-300 group"
@@ -103,7 +103,7 @@ const Contact = () => {
                     <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/alshamsidev/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-12 h-12 rounded-lg bg-secondary hover:bg-primary/10 hover:border-primary/50 border border-border flex items-center justify-center transition-all duration-300 group"
