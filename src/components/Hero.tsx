@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(132,204,22,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(132,204,22,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
       
