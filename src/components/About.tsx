@@ -46,20 +46,11 @@ const About = () => {
             >
               <div className="relative">
                 <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-primary/20 shadow-lg shadow-primary/10">
-                  {/* Replace src with your actual photo */}
                   <img
-                    src="/portfolio/profile.jpg"
-                    alt="Saud Alshamsi"
+                    src="/portfolio/profile.svg"
+                    alt="Saud Alshamsi - QA Engineer"
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      // Fallback to initials if image not found
-                      e.currentTarget.style.display = 'none';
-                      e.currentTarget.nextElementSibling?.classList.remove('hidden');
-                    }}
                   />
-                  <div className="hidden w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                    <span className="text-6xl font-bold text-primary">SA</span>
-                  </div>
                 </div>
                 {/* Decorative element */}
                 <div className="absolute -bottom-4 -right-4 w-72 h-72 md:w-80 md:h-80 rounded-2xl border-2 border-primary/30 -z-10" />

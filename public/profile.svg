@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#84cc16;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#65a30d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Decorative grid pattern -->
+  <g opacity="0.1">
+    <line x1="0" y1="50" x2="400" y2="50" stroke="#84cc16" stroke-width="1"/>
+    <line x1="0" y1="100" x2="400" y2="100" stroke="#84cc16" stroke-width="1"/>
+    <line x1="0" y1="150" x2="400" y2="150" stroke="#84cc16" stroke-width="1"/>
+    <line x1="0" y1="200" x2="400" y2="200" stroke="#84cc16" stroke-width="1"/>
+    <line x1="0" y1="250" x2="400" y2="250" stroke="#84cc16" stroke-width="1"/>
+    <line x1="0" y1="300" x2="400" y2="300" stroke="#84cc16" stroke-width="1"/>
+    <line x1="0" y1="350" x2="400" y2="350" stroke="#84cc16" stroke-width="1"/>
+    <line x1="50" y1="0" x2="50" y2="400" stroke="#84cc16" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="400" stroke="#84cc16" stroke-width="1"/>
+    <line x1="150" y1="0" x2="150" y2="400" stroke="#84cc16" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="400" stroke="#84cc16" stroke-width="1"/>
+    <line x1="250" y1="0" x2="250" y2="400" stroke="#84cc16" stroke-width="1"/>
+    <line x1="300" y1="0" x2="300" y2="400" stroke="#84cc16" stroke-width="1"/>
+    <line x1="350" y1="0" x2="350" y2="400" stroke="#84cc16" stroke-width="1"/>
+  </g>
+
+  <!-- Glow effect behind head -->
+  <circle cx="200" cy="150" r="90" fill="#84cc16" opacity="0.1"/>
+  <circle cx="200" cy="150" r="70" fill="#84cc16" opacity="0.1"/>
+
+  <!-- Head silhouette -->
+  <circle cx="200" cy="140" r="65" fill="#2d3748"/>
+
+  <!-- Body/shoulders silhouette -->
+  <ellipse cx="200" cy="320" rx="120" ry="100" fill="#2d3748"/>
+
+  <!-- Glasses -->
+  <g fill="none" stroke="url(#accentGrad)" stroke-width="4">
+    <rect x="135" y="130" width="50" height="35" rx="5"/>
+    <rect x="215" y="130" width="50" height="35" rx="5"/>
+    <line x1="185" y1="147" x2="215" y2="147"/>
+    <line x1="125" y1="147" x2="135" y2="147"/>
+    <line x1="265" y1="147" x2="275" y2="147"/>
+  </g>
+
+
+  <!-- Bug icon (QA symbol) -->
+  <g transform="translate(310, 50)" fill="#84cc16" opacity="0.8">
+    <circle cx="20" cy="20" r="12" fill="none" stroke="#84cc16" stroke-width="2"/>
+    <circle cx="15" cy="17" r="2"/>
+    <circle cx="25" cy="17" r="2"/>
+    <path d="M14 24 Q20 28 26 24" fill="none" stroke="#84cc16" stroke-width="2"/>
+    <line x1="8" y1="15" x2="12" y2="18" stroke="#84cc16" stroke-width="2"/>
+    <line x1="32" y1="15" x2="28" y2="18" stroke="#84cc16" stroke-width="2"/>
+    <line x1="6" y1="22" x2="10" y2="22" stroke="#84cc16" stroke-width="2"/>
+    <line x1="34" y1="22" x2="30" y2="22" stroke="#84cc16" stroke-width="2"/>
+  </g>
+
+  <!-- Checkmark icon -->
+  <g transform="translate(50, 50)">
+    <circle cx="20" cy="20" r="15" fill="none" stroke="#84cc16" stroke-width="2" opacity="0.8"/>
+    <path d="M12 20 L18 26 L28 14" fill="none" stroke="#84cc16" stroke-width="3" opacity="0.8"/>
+  </g>
+
+  <!-- Terminal cursor blinking effect suggestion -->
+  <rect x="170" y="260" width="60" height="8" fill="#84cc16" opacity="0.6" rx="2"/>
+</svg>
