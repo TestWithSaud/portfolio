@@ -1,13 +1,10 @@
 import { motion } from "framer-motion";
-import { 
-  MousePointerClick, 
-  Globe, 
-  Plug, 
-  Gauge, 
-  Bug, 
-  Shield,
-  GitBranch,
-  Database
+import {
+  MousePointerClick,
+  Globe,
+  Plug,
+  Gauge,
+  Bug
 } from "lucide-react";
 
 const skills = [
@@ -27,37 +24,19 @@ const skills = [
     icon: Plug,
     title: "API Testing",
     description: "RESTful API validation, contract testing, and automated API test suites",
-    tools: ["Postman", "REST Assured", "Supertest"],
+    tools: ["Postman"],
   },
   {
     icon: Gauge,
     title: "Performance Testing",
     description: "Load testing, stress testing, and performance bottleneck identification",
-    tools: ["k6", "JMeter", "Gatling"],
+    tools: ["k6", "JMeter"],
   },
   {
     icon: Bug,
     title: "Test Automation",
     description: "Building scalable test frameworks with CI/CD integration and parallel execution",
     tools: ["TypeScript", "Python", "Java"],
-  },
-  {
-    icon: Shield,
-    title: "Security Testing",
-    description: "Vulnerability assessment, penetration testing basics, and OWASP compliance",
-    tools: ["OWASP ZAP", "Burp Suite"],
-  },
-  {
-    icon: GitBranch,
-    title: "CI/CD Integration",
-    description: "Integrating tests into pipelines with automated quality gates and reporting",
-    tools: ["GitHub Actions", "Jenkins", "GitLab CI"],
-  },
-  {
-    icon: Database,
-    title: "Database Testing",
-    description: "Data validation, migration testing, and database integrity verification",
-    tools: ["SQL", "MongoDB", "PostgreSQL"],
   },
 ];
 
@@ -108,7 +87,7 @@ const Skills = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto"
         >
           {skills.map((skill, index) => (
             <motion.div
