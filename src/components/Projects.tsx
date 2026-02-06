@@ -4,48 +4,41 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Test Automation Suite",
-    description: "Built a comprehensive end-to-end testing framework for a large-scale e-commerce platform, reducing regression testing time by 80% and catching critical bugs before production.",
-    technologies: ["Playwright", "TypeScript", "GitHub Actions", "Allure Reports"],
+    title: "Test Automation Initiative",
+    description: "Shift regression testing from manual to automated to reduce testing cycles and improve efficiency.",
+    technologies: ["Playwright", "TypeScript"],
     impact: [
-      "Reduced manual testing effort by 70%",
-      "Achieved 95% test coverage on critical paths",
-      "Zero production bugs in payment flow for 6 months",
+      "Reduced regression testing time significantly",
+      "Performed cross-browser testing across Chrome, Firefox, Safari, and Edge",
+      "Mentored 2 junior testers, accelerating their productivity by 40%",
     ],
     category: "Web Automation",
+    type: "Professional",
   },
   {
-    title: "API Testing Framework",
-    description: "Designed and implemented a scalable API testing framework with contract testing, enabling microservices teams to validate API changes independently.",
-    technologies: ["REST Assured", "Java", "Docker", "Jenkins"],
+    title: "Performance Testing",
+    description: "Identify performance bottlenecks and ensure application can handle expected user load.",
+    technologies: ["JMeter"],
     impact: [
-      "Automated 500+ API test cases",
-      "Reduced API integration issues by 60%",
-      "Enabled parallel testing across 20+ microservices",
-    ],
-    category: "API Testing",
-  },
-  {
-    title: "Performance Testing Pipeline",
-    description: "Established automated performance testing integrated into CI/CD, providing continuous performance regression monitoring and capacity planning insights.",
-    technologies: ["k6", "Grafana", "InfluxDB", "AWS"],
-    impact: [
-      "Identified 3 critical performance bottlenecks",
-      "Improved average response time by 40%",
-      "Established performance SLAs and monitoring",
+      "Identified critical bottlenecks that improved page load time",
+      "Reduced similar production incidents by 90% through root cause analysis",
+      "Implemented shift-left testing practices with Product and Dev teams",
     ],
     category: "Performance",
+    type: "Professional",
   },
   {
-    title: "Mobile App Quality Assurance",
-    description: "Led QA efforts for a fintech mobile application, implementing both manual and automated testing strategies across iOS and Android platforms.",
-    technologies: ["Appium", "BrowserStack", "TestFlight", "Firebase"],
+    title: "Sauce Demo - Playwright Automation",
+    description: "Personal project demonstrating Playwright test automation skills by automating end-to-end tests for the Sauce Demo e-commerce application.",
+    technologies: ["Playwright", "TypeScript", "Node.js"],
     impact: [
-      "Maintained 4.8+ app store rating",
-      "Reduced customer-reported bugs by 50%",
-      "Achieved 99.9% crash-free sessions",
+      "Implemented Page Object Model design pattern for maintainable test code",
+      "Cross-browser testing across Chromium, Firefox, and WebKit",
+      "Covered login, inventory, cart, and checkout flows with data-driven tests",
     ],
-    category: "Mobile Testing",
+    category: "Web Automation",
+    type: "Personal",
+    link: "https://github.com/TestWithSaud/sauceLab",
   },
 ];
 
@@ -104,9 +97,18 @@ const Projects = () => {
               className="group bg-gradient-card rounded-xl p-8 border border-border hover:border-primary/50 transition-all duration-300"
             >
               <div className="flex items-center justify-between mb-4">
-                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
-                  {project.category}
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
+                    {project.category}
+                  </span>
+                  <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${
+                    project.type === "Professional"
+                      ? "bg-blue-500/10 text-blue-400 border-blue-500/20"
+                      : "bg-amber-500/10 text-amber-400 border-amber-500/20"
+                  }`}>
+                    {project.type}
+                  </span>
+                </div>
                 <GitBranch className="w-5 h-5 text-muted-foreground" />
               </div>
 
@@ -143,14 +145,19 @@ const Projects = () => {
                 ))}
               </div>
 
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-primary hover:text-primary hover:bg-primary/10 p-0"
-              >
-                View Details
-                <ExternalLink className="ml-2 w-4 h-4" />
-              </Button>
+              {project.link && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-primary hover:text-primary hover:bg-primary/10 p-0"
+                  asChild
+                >
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    View on GitHub
+                    <ExternalLink className="ml-2 w-4 h-4" />
+                  </a>
+                </Button>
+              )}
             </motion.div>
           ))}
         </motion.div>

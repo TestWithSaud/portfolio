@@ -49,13 +49,13 @@ const Contact = () => {
                 </div>
               </a>
 
-              <div className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 border border-transparent">
+<div className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 border border-transparent">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">Remote / Worldwide</p>
+                  <p className="font-medium">Riyadh, Saudi Arabia</p>
                 </div>
               </div>
             </div>
