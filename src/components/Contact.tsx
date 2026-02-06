@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -49,13 +49,28 @@ const Contact = () => {
                 </div>
               </a>
 
+              <a
+                href="tel:+966548008873"
+                className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 hover:bg-primary/10 border border-transparent hover:border-primary/30 transition-all duration-300 group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <Phone className="w-6 h-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-sm text-muted-foreground">Phone</p>
+                  <p className="font-medium group-hover:text-primary transition-colors">
+                    +966548008873
+                  </p>
+                </div>
+              </a>
+
               <div className="flex items-center gap-4 p-4 rounded-xl bg-secondary/50 border border-transparent">
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="font-medium">Remote / Worldwide</p>
+                  <p className="font-medium">Riyadh, Saudi Arabia</p>
                 </div>
               </div>
             </div>

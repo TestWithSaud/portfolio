@@ -9,10 +9,10 @@ const highlights = [
 ];
 
 const qualities = [
-  "Strong analytical and problem-solving skills",
-  "Experience with Agile/Scrum methodologies",
-  "Excellent attention to detail",
-  "Passionate about delivering quality software",
+  "Manual, automation, and performance testing expertise",
+  "Shift-left testing and defect prevention",
+  "Team mentoring and knowledge sharing",
+  "Root cause analysis and process improvement",
 ];
 
 const About = () => {
@@ -66,15 +66,14 @@ const About = () => {
               className="space-y-6"
             >
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm a dedicated <span className="text-foreground font-medium">QA Engineer</span> with
-                over 4 years of experience ensuring software quality across web, mobile, and API platforms.
-                My passion lies in building robust testing strategies that catch bugs before they reach production.
+                ISTQB-certified <span className="text-foreground font-medium">QA Engineer</span> with 4+ years of hands-on
+                experience in manual, automation, and performance testing, plus 1 year in web development.
               </p>
 
               <p className="text-muted-foreground leading-relaxed">
-                I specialize in both manual and automated testing, with hands-on experience in tools like
-                Playwright, Cypress, and Postman. I believe that quality is not just about finding bugs—it's
-                about preventing them through smart test design and continuous collaboration with development teams.
+                Proficient in modern testing tools including Playwright, JMeter, and Postman, with additional
+                Java Spring Boot skills. Proven track record of implementing efficient testing processes,
+                mentoring team members, and delivering high-quality software solutions.
               </p>
 
               {/* Highlights */}

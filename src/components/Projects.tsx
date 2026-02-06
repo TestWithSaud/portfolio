@@ -4,48 +4,26 @@ import { Button } from "./ui/button";
 
 const projects = [
   {
-    title: "E-Commerce Test Automation Suite",
-    description: "Built a comprehensive end-to-end testing framework for a large-scale e-commerce platform, reducing regression testing time by 80% and catching critical bugs before production.",
-    technologies: ["Playwright", "TypeScript", "GitHub Actions", "Allure Reports"],
+    title: "Test Automation Initiative",
+    description: "Shift regression testing from manual to automated to reduce testing cycles and improve efficiency.",
+    technologies: ["Playwright", "TypeScript"],
     impact: [
-      "Reduced manual testing effort by 70%",
-      "Achieved 95% test coverage on critical paths",
-      "Zero production bugs in payment flow for 6 months",
+      "Reduced regression testing time significantly",
+      "Automated manual test cases for faster release cycles",
+      "Improved overall testing efficiency and coverage",
     ],
     category: "Web Automation",
   },
   {
-    title: "API Testing Framework",
-    description: "Designed and implemented a scalable API testing framework with contract testing, enabling microservices teams to validate API changes independently.",
-    technologies: ["REST Assured", "Java", "Docker", "Jenkins"],
+    title: "Performance Testing",
+    description: "Identify performance bottlenecks and ensure application can handle expected user load.",
+    technologies: ["JMeter"],
     impact: [
-      "Automated 500+ API test cases",
-      "Reduced API integration issues by 60%",
-      "Enabled parallel testing across 20+ microservices",
-    ],
-    category: "API Testing",
-  },
-  {
-    title: "Performance Testing Pipeline",
-    description: "Established automated performance testing integrated into CI/CD, providing continuous performance regression monitoring and capacity planning insights.",
-    technologies: ["k6", "Grafana", "InfluxDB", "AWS"],
-    impact: [
-      "Identified 3 critical performance bottlenecks",
-      "Improved average response time by 40%",
-      "Established performance SLAs and monitoring",
+      "Identified critical performance bottlenecks",
+      "Improved page load time",
+      "Ensured application stability under expected user load",
     ],
     category: "Performance",
-  },
-  {
-    title: "Mobile App Quality Assurance",
-    description: "Led QA efforts for a fintech mobile application, implementing both manual and automated testing strategies across iOS and Android platforms.",
-    technologies: ["Appium", "BrowserStack", "TestFlight", "Firebase"],
-    impact: [
-      "Maintained 4.8+ app store rating",
-      "Reduced customer-reported bugs by 50%",
-      "Achieved 99.9% crash-free sessions",
-    ],
-    category: "Mobile Testing",
   },
 ];
 

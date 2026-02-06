@@ -9,12 +9,12 @@ const experiences = [
     location: "Riyadh, Saudi Arabia",
     description: "Lead QA initiatives for enterprise applications, implementing automation frameworks and mentoring team members.",
     achievements: [
-      "Developed automated test scripts using Playwright, reducing regression testing time",
-      "Performed cross-browser testing across Chrome, Firefox, Safari, and Edge",
-      "Mentored 2 junior testers, accelerating their productivity by 40%",
-      "Implemented shift-left testing practices with Product and Dev teams",
-      "Reduced production incidents by 90% through root cause analysis",
-      "Led performance testing initiative using JMeter"
+      "Developed and maintained automated test scripts using Playwright, reducing regression testing time",
+      "Performed cross-browser testing across Chrome, Firefox, Safari, and Edge, identifying browser-specific issues before production release",
+      "Mentored 2 junior testers on test case design principles and defect reporting best practices, accelerating their productivity by 40%",
+      "Collaborated with Product and Development teams to implement shift-left testing practices, identifying and preventing defects during requirements and design phases",
+      "Conducted root cause analysis for production incidents, identifying systemic quality gaps and implementing preventive measures that reduced similar incidents by 90%",
+      "Led performance testing initiative using JMeter, identifying critical bottlenecks that improved page load time"
     ],
     technologies: ["Playwright", "JMeter", "Postman", "TypeScript", "Agile"]
   },
@@ -25,10 +25,10 @@ const experiences = [
     location: "Riyadh, Saudi Arabia",
     description: "Full-stack development building front-end components and back-end APIs.",
     achievements: [
-      "Developed front-end components using HTML, CSS, JavaScript with React/Vue.js",
-      "Built back-end logic and APIs using Laravel/PHP",
-      "Designed and implemented database models and operations",
-      "Performed unit testing to ensure code quality"
+      "Developed and maintained front-end components and user interfaces using HTML, CSS, and JavaScript, along with frameworks like React/Vue.js",
+      "Contributed to the development of back-end logic and APIs using Laravel/PHP",
+      "Worked with databases to design and implement data models and perform database operations",
+      "Performed Unit Testing to ensure individual pieces of code work as intended"
     ],
     technologies: ["Laravel", "PHP", "React", "Vue.js", "JavaScript", "MySQL"]
   },
@@ -39,8 +39,7 @@ const experiences = [
     location: "Saudi Arabia",
     description: "Front-end development creating user interfaces and components.",
     achievements: [
-      "Developed and maintained front-end components and user interfaces",
-      "Built responsive layouts using HTML, CSS, and JavaScript"
+      "Developed and maintained front-end components and user interfaces using HTML, CSS, and JavaScript"
     ],
     technologies: ["HTML", "CSS", "JavaScript"]
   },
@@ -50,10 +49,7 @@ const experiences = [
     period: "Feb 2013 - Aug 2015",
     location: "Saudi Arabia",
     description: "IT support providing technical assistance and troubleshooting.",
-    achievements: [
-      "Provided technical support and troubleshooting",
-      "Managed IT help desk operations"
-    ],
+    achievements: [],
     technologies: ["IT Support", "Troubleshooting"]
   }
 ];
@@ -162,14 +158,16 @@ const Experience = () => {
                   </p>
 
                   {/* Achievements */}
-                  <ul className="mt-4 space-y-2">
-                    {exp.achievements.slice(0, 3).map((achievement, i) => (
-                      <li key={i} className="text-sm text-muted-foreground">
-                        <span className="text-primary mr-2">&bull;</span>
-                        {achievement}
-                      </li>
-                    ))}
-                  </ul>
+                  {exp.achievements.length > 0 && (
+                    <ul className="mt-4 space-y-2">
+                      {exp.achievements.map((achievement, i) => (
+                        <li key={i} className="text-sm text-muted-foreground">
+                          <span className="text-primary mr-2">&bull;</span>
+                          {achievement}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
 
                   {/* Technologies */}
                   <div className="mt-4 flex flex-wrap gap-2">

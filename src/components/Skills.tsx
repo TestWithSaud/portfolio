@@ -11,32 +11,32 @@ const skills = [
   {
     icon: MousePointerClick,
     title: "Manual Testing",
-    description: "Exploratory testing, test case design, regression testing, and comprehensive bug reporting",
-    tools: ["TestRail", "Jira", "Zephyr"],
+    description: "Exploratory testing, test case design, cross-browser testing, and defect reporting best practices",
+    tools: ["Test Case Design", "Cross-Browser Testing", "Root Cause Analysis"],
   },
   {
     icon: Globe,
     title: "Web Automation",
-    description: "End-to-end browser testing with modern automation frameworks and page object patterns",
-    tools: ["Playwright", "Cypress", "Selenium"],
+    description: "End-to-end browser testing with modern automation frameworks, reducing regression testing time",
+    tools: ["Playwright", "TypeScript"],
   },
   {
     icon: Plug,
     title: "API Testing",
-    description: "RESTful API validation, contract testing, and automated API test suites",
+    description: "RESTful API validation and automated API test suites",
     tools: ["Postman"],
   },
   {
     icon: Gauge,
     title: "Performance Testing",
-    description: "Load testing, stress testing, and performance bottleneck identification",
-    tools: ["k6", "JMeter"],
+    description: "Load testing, stress testing, and identifying critical bottlenecks to improve page load time",
+    tools: ["JMeter"],
   },
   {
     icon: Bug,
-    title: "Test Automation",
-    description: "Building scalable test frameworks with CI/CD integration and parallel execution",
-    tools: ["TypeScript", "Python", "Java"],
+    title: "Web Development",
+    description: "Full-stack development with front-end frameworks and back-end APIs",
+    tools: ["Java Spring Boot", "Laravel/PHP", "React", "Vue.js"],
   },
 ];
 
