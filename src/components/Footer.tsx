@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="py-8 border-t border-border bg-background">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span>© {currentYear} Saud Alshamsi. Built with</span>
-            <Heart className="w-4 h-4 text-primary fill-primary" />
-            <span>and lots of testing.</span>
-          </div>
+          <p className="text-sm text-muted-foreground text-center md:text-left">
+            © {currentYear} Saud Alshamsi. Built with{" "}
+            <Heart className="w-4 h-4 text-primary fill-primary inline-block align-middle" />{" "}
+            and lots of testing.
+          </p>
 
           <div className="flex items-center gap-4">
             <a
