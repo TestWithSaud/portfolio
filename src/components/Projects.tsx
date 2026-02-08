@@ -40,6 +40,19 @@ const projects = [
     type: "Personal",
     link: "https://github.com/TestWithSaud/sauceLab",
   },
+  {
+    title: "BlazeDemo - Performance Test Suite",
+    description: "JMeter-based performance testing suite validating the flight booking workflow of the BlazeDemo application through load and stress testing.",
+    technologies: ["JMeter", "Java"],
+    impact: [
+      "Designed stepped load profiles reaching 20 concurrent users with realistic think times",
+      "Enforced response time SLAs (2-3s thresholds) with HTTP status and content assertions",
+      "Used 20 user records and 42 flight route combinations for data-driven test scenarios",
+    ],
+    category: "Performance",
+    type: "Personal",
+    link: "https://github.com/TestWithSaud/BlazeDemo",
+  },
 ];
 
 const containerVariants = {
