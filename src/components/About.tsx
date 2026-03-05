@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle, Calendar, Briefcase, Award, Download } from "lucide-react";
+import { CheckCircle, Calendar, Briefcase, Award, Download, FileText, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 
 const highlights = [
@@ -73,15 +73,15 @@ const About = () => {
               </p>
 
               {/* Highlights */}
-              <div className="grid grid-cols-3 gap-4 py-6">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 py-6">
                 {highlights.map((item, index) => (
                   <div
                     key={index}
-                    className="text-center p-4 rounded-xl bg-secondary/50 border border-border"
+                    className="glass-panel text-center p-6 rounded-2xl hover:-translate-y-1 transition-transform duration-300"
                   >
-                    <item.icon className="w-6 h-6 text-primary mx-auto mb-2" />
-                    <div className="text-2xl font-bold text-primary">{item.value}</div>
-                    <div className="text-xs text-muted-foreground">{item.label}</div>
+                    <item.icon className="w-8 h-8 text-primary mx-auto mb-3" />
+                    <div className="text-3xl font-bold text-primary mb-1">{item.value}</div>
+                    <div className="text-sm font-medium text-muted-foreground">{item.label}</div>
                   </div>
                 ))}
               </div>
@@ -96,19 +96,49 @@ const About = () => {
                 ))}
               </div>
 
-              {/* Download Resume Button */}
-              <div className="pt-4">
-                <Button
-                  size="lg"
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold"
-                  asChild
+              {/* Download Resume Card */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="pt-6"
+              >
+                <a
+                  href="/portfolio/saud_Alshamsi_cv.pdf"
+                  download="Saud_Alshamsi_CV.pdf"
+                  className="block group"
                 >
-                  <a href="/portfolio/saud_Alshamsi_cv.pdf" download="Saud_Alshamsi_CV.pdf">
-                    <Download className="mr-2 h-5 w-5" />
-                    Download Resume
-                  </a>
-                </Button>
-              </div>
+                  <div className="glass-panel p-5 rounded-2xl flex flex-col xl:flex-row items-start xl:items-center justify-between gap-5 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-primary/10 group-hover:border-primary/40 relative overflow-hidden">
+                    {/* Background Glow Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/0 via-primary/5 to-primary/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
+
+                    <div className="flex items-center gap-4 z-10 w-full min-w-0">
+                      <div className="w-12 h-12 flex-shrink-0 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-300">
+                        <FileText className="w-6 h-6 text-primary" />
+                      </div>
+                      <div className="min-w-0 flex-1">
+                        <h4 className="font-bold text-base md:text-lg text-foreground group-hover:text-primary transition-colors truncate">Saud_Alshamsi_CV.pdf</h4>
+                        <div className="flex items-center gap-2 mt-1">
+                          <span className="text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap">PDF Document</span>
+                          <span className="w-1 h-1 rounded-full bg-border flex-shrink-0" />
+                          <span className="text-xs sm:text-sm font-medium text-primary/80 whitespace-nowrap">1.2 MB</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center w-full xl:w-auto justify-end gap-3 z-10">
+                      <Button
+                        size="sm"
+                        className="bg-primary text-primary-foreground group-hover:bg-primary/90 glow-primary font-semibold flex-shrink-0 pointer-events-none"
+                      >
+                        <Download className="mr-2 h-4 w-4 flex-shrink-0" />
+                        Download
+                      </Button>
+                    </div>
+                  </div>
+                </a>
+              </motion.div>
             </motion.div>
           </div>
         </div>

@@ -115,6 +115,20 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', system-ui, sans-serif;
   }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded-full border-2 border-background;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
 }
 
 @layer utilities {
@@ -142,5 +156,9 @@
   .terminal-cursor::after {
     content: '|';
     @apply text-primary animate-pulse ml-1;
+  }
+
+  .glass-panel {
+    @apply bg-background/60 backdrop-blur-md border border-border/50;
   }
 }

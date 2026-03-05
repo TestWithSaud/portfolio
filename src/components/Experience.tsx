@@ -118,9 +118,8 @@ const Experience = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className={`relative pb-8 last:pb-0 ${
-                index % 2 === 0 ? "md:pr-[50%]" : "md:pl-[50%]"
-              }`}
+              className={`relative pb-8 last:pb-0 ${index % 2 === 0 ? "md:pr-[50%]" : "md:pl-[50%]"
+                }`}
             >
               {/* Timeline dot - desktop */}
               <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-8 w-4 h-4 rounded-full bg-primary border-4 border-background z-10" />
@@ -130,9 +129,8 @@ const Experience = () => {
 
               {/* Card */}
               <div
-                className={`ml-10 md:ml-0 ${
-                  index % 2 === 0 ? "md:mr-8" : "md:ml-8"
-                }`}
+                className={`ml-10 md:ml-0 ${index % 2 === 0 ? "md:mr-8" : "md:ml-8"
+                  }`}
               >
                 <div className="bg-gradient-card border border-border rounded-xl p-6 hover:border-primary/50 hover:glow-primary transition-all duration-300 group">
                   {/* Header */}

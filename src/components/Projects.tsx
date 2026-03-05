@@ -114,11 +114,10 @@ const Projects = () => {
                   <span className="text-xs font-semibold px-3 py-1 rounded-full bg-primary/10 text-primary border border-primary/20">
                     {project.category}
                   </span>
-                  <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${
-                    project.type === "Professional"
-                      ? "bg-blue-500/10 text-blue-400 border-blue-500/20"
-                      : "bg-amber-500/10 text-amber-400 border-amber-500/20"
-                  }`}>
+                  <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${project.type === "Professional"
+                    ? "bg-blue-500/10 text-blue-400 border-blue-500/20"
+                    : "bg-amber-500/10 text-amber-400 border-amber-500/20"
+                    }`}>
                     {project.type}
                   </span>
                 </div>

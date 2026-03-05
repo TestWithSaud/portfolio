@@ -6,8 +6,30 @@ const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(132,204,22,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(132,204,22,0.03)_1px,transparent_1px)] bg-[size:60px_60px]" />
-      
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(132,204,22,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(132,204,22,0.03)_1px,transparent_1px)] bg-[size:60px_60px] z-0" />
+
+      {/* Animated Glowing Orbs */}
+      <motion.div
+        animate={{
+          scale: [1, 1.2, 1],
+          opacity: [0.3, 0.5, 0.3],
+          x: [0, 50, 0],
+          y: [0, -30, 0],
+        }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-1/4 left-1/4 w-[30rem] h-[30rem] bg-primary/20 rounded-full blur-[120px] pointer-events-none z-0"
+      />
+      <motion.div
+        animate={{
+          scale: [1, 1.3, 1],
+          opacity: [0.2, 0.4, 0.2],
+          x: [0, -40, 0],
+          y: [0, 50, 0],
+        }}
+        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        className="absolute bottom-1/4 right-1/4 w-[25rem] h-[25rem] bg-amber-500/10 rounded-full blur-[100px] pointer-events-none z-0"
+      />
+
       {/* Floating Terminal Icon */}
       <motion.div
         className="absolute top-1/4 right-1/4 text-primary/10"
@@ -69,24 +91,28 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <Button
-              size="lg"
-              className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold px-8"
-              asChild
-            >
-              <a href="#projects">
-                View My Work
-                <ArrowDown className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-border hover:bg-secondary hover:text-foreground"
-              asChild
-            >
-              <a href="#contact">Get In Touch</a>
-            </Button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-primary text-primary-foreground hover:bg-primary/90 glow-primary font-semibold px-8 w-full sm:w-auto"
+                asChild
+              >
+                <a href="#projects">
+                  View My Work
+                  <ArrowDown className="ml-2 h-4 w-4" />
+                </a>
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-border hover:bg-secondary hover:text-foreground w-full sm:w-auto"
+                asChild
+              >
+                <a href="#contact">Get In Touch</a>
+              </Button>
+            </motion.div>
           </motion.div>
         </div>
       </div>

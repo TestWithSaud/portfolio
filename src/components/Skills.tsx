@@ -9,16 +9,16 @@ import {
 
 const skills = [
   {
-    icon: MousePointerClick,
-    title: "Manual Testing",
-    description: "Exploratory testing, test case design, regression testing, and comprehensive bug reporting",
-    tools: ["Jira", "Cross-Browser Testing"],
-  },
-  {
     icon: Globe,
     title: "Web Automation",
     description: "End-to-end browser testing with modern automation frameworks and page object patterns",
     tools: ["Playwright", "TypeScript"],
+  },
+  {
+    icon: MousePointerClick,
+    title: "Manual Testing",
+    description: "Exploratory testing, test case design, regression testing, and comprehensive bug reporting",
+    tools: ["Jira", "Cross-Browser Testing"],
   },
   {
     icon: Plug,
@@ -77,7 +77,7 @@ const Skills = () => {
             Testing Skills & Tools
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive testing expertise across the software development lifecycle, 
+            Comprehensive testing expertise across the software development lifecycle,
             from manual exploration to fully automated test pipelines.
           </p>
         </motion.div>
@@ -93,20 +93,25 @@ const Skills = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="group bg-gradient-card rounded-lg p-6 border border-border hover:border-primary/50 transition-all duration-300 hover:glow-primary"
+              className={`group glass-panel rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 flex flex-col justify-between ${index === 0 ? "md:col-span-2 lg:col-span-2" :
+                index === 4 ? "md:col-span-2 lg:col-span-1" :
+                  ""
+                }`}
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                <skill.icon className="w-6 h-6 text-primary" />
+              <div>
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-500">
+                  <skill.icon className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold mb-3">{skill.title}</h3>
+                <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
+                  {skill.description}
+                </p>
               </div>
-              <h3 className="text-lg font-semibold mb-2">{skill.title}</h3>
-              <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                {skill.description}
-              </p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 mt-auto">
                 {skill.tools.map((tool, toolIndex) => (
                   <span
                     key={toolIndex}
-                    className="text-xs px-2 py-1 rounded bg-secondary text-secondary-foreground"
+                    className="text-xs px-2.5 py-1.5 rounded-md bg-secondary text-secondary-foreground font-medium"
                   >
                     {tool}
                   </span>
