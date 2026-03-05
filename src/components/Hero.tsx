@@ -26,7 +26,7 @@ const Hero = () => {
             className="mb-6 flex flex-wrap gap-3 justify-center"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
-              Senior Software Testing
+              Senior QA Engineer
             </span>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 text-amber-500 text-sm font-medium border border-amber-500/20">
               <Award className="w-4 h-4" />
@@ -59,8 +59,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-base text-muted-foreground/80 mb-10 max-w-2xl mx-auto"
           >
-            ISTQB-certified QA Engineer with 4+ years of hands-on experience in manual, automation,
-            and performance testing. Proficient in Playwright, JMeter, and Postman.
+            Former developer turned QA Engineer — I understand how bugs are introduced, not just how to find them.
+            Bridging dev and QA, and building toward SDET.
           </motion.p>
 
           <motion.div

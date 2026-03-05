@@ -3,16 +3,16 @@ import { CheckCircle, Calendar, Briefcase, Award, Download } from "lucide-react"
 import { Button } from "./ui/button";
 
 const highlights = [
-  { icon: Calendar, label: "Years Experience", value: "4+" },
-  { icon: Briefcase, label: "Projects Completed", value: "20+" },
+  { icon: Calendar, label: "Years Experience", value: "5+" },
+  { icon: CheckCircle, label: "Available for Hire", value: "Yes" },
   { icon: Award, label: "ISTQB Certified", value: "Yes" },
 ];
 
 const qualities = [
-  "Strong analytical and problem-solving skills",
-  "Experience with Agile/Scrum methodologies",
-  "Excellent attention to detail",
-  "Passionate about delivering quality software",
+  "Developer background: reads source code to pinpoint root causes, not just symptoms",
+  "Builds and maintains Playwright automation suites in TypeScript end-to-end",
+  "Reduced production incidents by 90% through structured root cause analysis",
+  "Bridges QA and development — communicates defects in language devs act on",
 ];
 
 const About = () => {
@@ -66,17 +66,10 @@ const About = () => {
               className="space-y-6"
             >
               <p className="text-lg text-muted-foreground leading-relaxed">
-                I'm an <span className="text-foreground font-medium">ISTQB-certified QA Engineer</span> with
-                4+ years of hands-on experience in manual, automation, and performance testing, plus 1 year
-                in web development. Proficient in modern testing tools including Playwright, JMeter, and Postman,
-                with additional Java Spring Boot skills.
-              </p>
-
-              <p className="text-muted-foreground leading-relaxed">
-                Proven track record of implementing efficient testing processes, mentoring team members,
-                and delivering high-quality software solutions. I believe that quality is not just about
-                finding bugs—it's about preventing them through smart test design and continuous collaboration
-                with development teams.
+                QA Engineer with 5+ years in manual, automation, and performance testing across large-scale web platforms.
+                ISTQB® Certified with hands-on experience in Playwright, JMeter, and Postman. Former software developer — which means
+                I understand the code I'm testing, communicate effectively with dev teams, and catch critical issues before they reach
+                production. Building toward SDET.
               </p>
 
               {/* Highlights */}

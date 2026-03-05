@@ -4,8 +4,8 @@ import { Briefcase, MapPin, Calendar } from "lucide-react";
 const experiences = [
   {
     company: "Tamkeen Technology",
-    position: "Senior Quality Assurance and Testing",
-    period: "Dec 2021 - Present",
+    position: "Senior QA Engineer",
+    period: "Dec 2021 - Feb 2026",
     location: "Riyadh, Saudi Arabia",
     description: "Lead QA initiatives for enterprise applications, implementing automation frameworks and mentoring team members.",
     achievements: [

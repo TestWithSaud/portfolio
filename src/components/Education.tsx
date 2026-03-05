@@ -16,21 +16,24 @@ const certifications = [
 
 const courses = [
   {
+    title: "Full-Stack Developer Nanodegree",
+    provider: "Udacity",
+    year: "2020",
+  },
+  {
     title: "Introduction to Software Testing",
     provider: "University of Minnesota",
     year: "2024",
   },
   {
-    title: "Full-Stack Developer Nanodegree",
-    provider: "Udacity",
-  },
-  {
     title: "MBSC Leadership Essentials Online Program",
     provider: "MBSC",
+    year: "2025",
   },
   {
     title: "Agile Certified Practitioner (PMI-ACP)\u00AE",
     provider: "Meirc Training & Consulting",
+    year: "2025",
   },
 ];
 

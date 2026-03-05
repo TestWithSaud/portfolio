@@ -8,7 +8,7 @@ const projects = [
     description: "Shift regression testing from manual to automated to reduce testing cycles and improve efficiency.",
     technologies: ["Playwright", "TypeScript"],
     impact: [
-      "Reduced regression testing time significantly",
+      "Reduced regression testing time by ~40% through Playwright automation",
       "Performed cross-browser testing across Chrome, Firefox, Safari, and Edge",
       "Mentored 2 junior testers, accelerating their productivity by 40%",
     ],
