@@ -105,8 +105,8 @@ const About = () => {
                 className="pt-6"
               >
                 <a
-                  href="/portfolio/saud_Alshamsi_cv.pdf"
-                  download="Saud_Alshamsi_CV.pdf"
+                  href="/portfolio/Saud_Alshamsi_Resume.pdf"
+                  download="Saud_Alshamsi_Resume.pdf"
                   className="block group"
                 >
                   <div className="glass-panel p-5 rounded-2xl flex flex-col xl:flex-row items-start xl:items-center justify-between gap-5 transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl group-hover:shadow-primary/10 group-hover:border-primary/40 relative overflow-hidden">
@@ -118,11 +118,11 @@ const About = () => {
                         <FileText className="w-6 h-6 text-primary" />
                       </div>
                       <div className="min-w-0 flex-1">
-                        <h4 className="font-bold text-base md:text-lg text-foreground group-hover:text-primary transition-colors truncate">Saud_Alshamsi_CV.pdf</h4>
+                        <h4 className="font-bold text-base md:text-lg text-foreground group-hover:text-primary transition-colors truncate">Saud_Alshamsi_Resume.pdf</h4>
                         <div className="flex items-center gap-2 mt-1">
                           <span className="text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap">PDF Document</span>
                           <span className="w-1 h-1 rounded-full bg-border flex-shrink-0" />
-                          <span className="text-xs sm:text-sm font-medium text-primary/80 whitespace-nowrap">1.2 MB</span>
+                          <span className="text-xs sm:text-sm font-medium text-primary/80 whitespace-nowrap">3.7 KB</span>
                         </div>
                       </div>
                     </div>
