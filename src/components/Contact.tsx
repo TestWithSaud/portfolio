@@ -50,7 +50,7 @@ const Contact = () => {
               </div>
 
               <div className="space-y-4 mt-auto">
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col gap-4">
                   <a
                     href="mailto:saudalshamsi92@gmail.com"
                     className="flex-1 flex items-center justify-between p-4 rounded-2xl bg-secondary/50 border border-transparent hover:border-primary/30 transition-all duration-300 group/email"

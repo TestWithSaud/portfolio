@@ -36,7 +36,7 @@ const skills = [
     icon: Bug,
     title: "Web Development",
     description: "Full-stack development with modern frameworks and back-end APIs",
-    tools: ["Laravel", "PHP", "React", "Vue.js", "Java Spring Boot"],
+    tools: ["Laravel", "PHP", "React", "Vue.js"],
   },
 ];
 

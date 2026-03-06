@@ -48,7 +48,7 @@ const Hero = () => {
             className="mb-6 flex flex-wrap gap-3 justify-center"
           >
             <span className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20">
-              Senior QA Engineer
+              Senior QA Specialist
             </span>
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 text-amber-500 text-sm font-medium border border-amber-500/20">
               <Award className="w-4 h-4" />

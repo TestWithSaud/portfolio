@@ -66,7 +66,7 @@ const About = () => {
               className="space-y-6"
             >
               <p className="text-lg text-muted-foreground leading-relaxed">
-                QA Engineer with 5+ years in manual, automation, and performance testing across large-scale web platforms.
+                Senior QA Specialist with 5+ years in manual, automation, and performance testing across large-scale web platforms.
                 ISTQB® Certified with hands-on experience in Playwright, JMeter, and Postman. Former software developer — which means
                 I understand the code I'm testing, communicate effectively with dev teams, and catch critical issues before they reach
                 production. Building toward SDET.
