@@ -47,7 +47,7 @@ const About = () => {
               <div className="relative">
                 <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-primary/20 shadow-lg shadow-primary/10">
                   <img
-                    src="/portfolio/profile.svg"
+                    src="/portfolio/saud.jpg"
                     alt="Saud Alshamsi - QA Engineer"
                     className="w-full h-full object-cover"
                   />
