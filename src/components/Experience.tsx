@@ -3,18 +3,13 @@ import { Briefcase, MapPin, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    company: "HRSD",
-    position: "QA Expert (Product Strategy)",
+    company: "jeelPay",
+    position: "Lead QA Engineer",
     period: "2026 – Present",
-    location: "Saudi Arabia",
-    description: "Bridging the gap between business requirements and technical execution through quality governance and strategic product alignment.",
-    achievements: [
-      "Quality Governance: Defining rigorous Acceptance Criteria and Definition of Done (DoD) for all product features",
-      "Shift-Left Strategy: Driving the \"Shift-Left\" testing movement by identifying quality bottlenecks during initial product discovery and requirement phases",
-      "Stakeholder Alignment: Collaborating with cross-functional teams to ensure the product roadmap prioritizes technical stability and high-standard user experiences",
-      "Process Optimization: Refining the development lifecycle to integrate automated feedback loops, reducing the gap between deployment and quality validation"
-    ],
-    technologies: ["Product Strategy", "Acceptance Criteria", "Shift-Left Testing", "Agile", "QA Governance"]
+    location: "Riyadh, Saudi Arabia",
+    description: "Leading web and mobile automation testing efforts.",
+    achievements: [],
+    technologies: ["Playwright", "Postman", "Appium"]
   },
   {
     company: "Tamkeen Technology",
