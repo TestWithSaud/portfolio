@@ -10,7 +10,7 @@ const highlights = [
 
 const qualities = [
   "Developer background: reads source code to pinpoint root causes, not just symptoms",
-  "Builds and maintains Playwright automation suites in TypeScript end-to-end",
+  "Builds and maintains Playwright (web) and Appium (iOS/Android) automation suites in TypeScript",
   "Reduced production incidents by 90% through structured root cause analysis",
   "Bridges QA and development — communicates defects in language devs act on",
 ];
@@ -66,8 +66,8 @@ const About = () => {
               className="space-y-6"
             >
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Lead QA Engineer with 5+ years in manual, automation, and performance testing across large-scale web platforms.
-                ISTQB® Certified with hands-on experience in Playwright, JMeter, and Postman. Former software developer — which means
+                Lead QA Engineer with 5+ years in manual, automation, and performance testing across web and mobile platforms.
+                ISTQB® Certified with hands-on experience in Playwright, Appium, JMeter, and Postman. Former software developer — which means
                 I understand the code I'm testing, communicate effectively with dev teams, and catch critical issues before they reach
                 production. Building toward SDET.
               </p>

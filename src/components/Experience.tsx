@@ -8,7 +8,12 @@ const experiences = [
     period: "2026 – Present",
     location: "Riyadh, Saudi Arabia",
     description: "Leading web and mobile automation testing efforts.",
-    achievements: [],
+    achievements: [
+      "Set up the web and mobile automation testing framework using Playwright and Appium",
+      "Authored and maintained end-to-end test scripts covering critical user flows across web, iOS, and Android",
+      "Defined QA standards, test strategy, and review practices for the engineering team",
+      "Owned API test coverage with Postman, validating core payment and account services"
+    ],
     technologies: ["Playwright", "Postman", "Appium"]
   },
   {

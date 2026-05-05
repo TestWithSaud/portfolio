@@ -4,7 +4,8 @@ import {
   Globe,
   Plug,
   Gauge,
-  Bug
+  Bug,
+  Smartphone
 } from "lucide-react";
 
 const skills = [
@@ -13,6 +14,12 @@ const skills = [
     title: "Web Automation",
     description: "End-to-end browser testing with modern automation frameworks and page object patterns",
     tools: ["Playwright", "TypeScript"],
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile Automation",
+    description: "End-to-end mobile testing on iOS and Android with cross-platform automation",
+    tools: ["Appium", "iOS", "Android"],
   },
   {
     icon: MousePointerClick,
@@ -93,10 +100,7 @@ const Skills = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className={`group glass-panel rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 flex flex-col justify-between ${index === 0 ? "md:col-span-2 lg:col-span-2" :
-                index === 4 ? "md:col-span-2 lg:col-span-1" :
-                  ""
-                }`}
+              className="group glass-panel rounded-2xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 flex flex-col justify-between"
             >
               <div>
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/20 group-hover:scale-110 transition-all duration-500">
