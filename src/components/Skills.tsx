@@ -25,7 +25,7 @@ const skills = [
     icon: MousePointerClick,
     title: "Manual Testing",
     description: "Exploratory testing, test case design, regression testing, and comprehensive bug reporting",
-    tools: ["Jira", "Cross-Browser Testing"],
+    tools: ["Jira", "Qase", "Zephyr Scale", "TestRail", "Cross-Browser Testing"],
   },
   {
     icon: Plug,
@@ -37,7 +37,7 @@ const skills = [
     icon: Gauge,
     title: "Performance Testing",
     description: "Load testing, stress testing, and performance bottleneck identification",
-    tools: ["JMeter"],
+    tools: ["JMeter", "K6", "Lighthouse"],
   },
   {
     icon: Bug,

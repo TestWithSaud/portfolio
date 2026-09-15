@@ -11,7 +11,7 @@ const highlights = [
 const qualities = [
   "Developer background: reads source code to pinpoint root causes, not just symptoms",
   "Builds and maintains Playwright (web) and Appium (iOS/Android) automation suites in TypeScript",
-  "Reduced production incidents by 90% through structured root cause analysis",
+  "Reduced recurring production incidents through structured root cause analysis",
   "Bridges QA and development — communicates defects in language devs act on",
 ];
 
@@ -122,7 +122,7 @@ const About = () => {
                         <div className="flex items-center gap-2 mt-1">
                           <span className="text-xs sm:text-sm font-medium text-muted-foreground whitespace-nowrap">PDF Document</span>
                           <span className="w-1 h-1 rounded-full bg-border flex-shrink-0" />
-                          <span className="text-xs sm:text-sm font-medium text-primary/80 whitespace-nowrap">104.6 KB</span>
+                          <span className="text-xs sm:text-sm font-medium text-primary/80 whitespace-nowrap">67.6 KB</span>
                         </div>
                       </div>
                     </div>

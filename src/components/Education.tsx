@@ -2,15 +2,21 @@ import { motion } from "framer-motion";
 import { GraduationCap, Award, BookOpen } from "lucide-react";
 
 const education = {
-  degree: "Bachelor of Information Technology, Software Testing",
-  university: "Swinburne University of Technology in Australia",
-  year: "2019",
+  degree: "Bachelor of Information and Communication Technology, Software Technology",
+  university: "Swinburne University of Technology, Melbourne, Australia",
+  year: "2017 \u2013 2019",
 };
 
 const certifications = [
   {
     title: "ISTQB\u00AE Certified Tester Foundation Level (CTFL)",
     year: "2024",
+  },
+];
+
+const memberships = [
+  {
+    title: "Saudi Council of Engineers",
   },
 ];
 
@@ -21,9 +27,19 @@ const courses = [
     year: "2020",
   },
   {
+    title: "Software Engineering Immersive",
+    provider: "General Assembly",
+    year: "2019",
+  },
+  {
     title: "Introduction to Software Testing",
     provider: "University of Minnesota",
-    year: "2024",
+    year: "2026",
+  },
+  {
+    title: "Playwright Power Techniques: Fast and Reliable Web Testing",
+    provider: "Coursera",
+    year: "",
   },
   {
     title: "MBSC Leadership Essentials Online Program",
@@ -126,6 +142,18 @@ const Education = () => {
                       <span className="text-xs text-muted-foreground">{cert.year}</span>
                     )}
                   </div>
+                </li>
+              ))}
+            </ul>
+
+            <h4 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider mt-6 mb-3">
+              Memberships
+            </h4>
+            <ul className="space-y-3">
+              {memberships.map((membership, index) => (
+                <li key={index} className="flex items-start gap-2">
+                  <span className="text-primary mt-1">&bull;</span>
+                  <p className="text-sm font-medium text-foreground">{membership.title}</p>
                 </li>
               ))}
             </ul>

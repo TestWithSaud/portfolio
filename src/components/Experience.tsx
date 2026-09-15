@@ -3,7 +3,7 @@ import { Briefcase, MapPin, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    company: "jeelPay",
+    company: "Jeel Pay",
     position: "Lead QA Engineer",
     period: "2026 – Present",
     location: "Riyadh, Saudi Arabia",
@@ -17,23 +17,50 @@ const experiences = [
     technologies: ["Playwright", "Postman", "Appium"]
   },
   {
-    company: "Tamkeen Technology",
+    company: "Tamkeen Technologies",
     position: "QA Specialist",
-    period: "Dec 2021 - Feb 2026",
+    period: "Sep 2024 - Feb 2026",
     location: "Riyadh, Saudi Arabia",
-    description: "Lead QA initiatives for enterprise applications, implementing automation frameworks and mentoring team members.",
+    description: "Led automation and performance testing initiatives for large-scale web platforms and mentored team members.",
     achievements: [
-      "Developed automated test scripts using Playwright, reducing regression testing time",
+      "Developed and maintained automated test scripts using Playwright, significantly reducing regression testing time",
+      "Reduced recurring production incidents through structured root cause analysis",
+      "Mentored 2 junior testers, helping them ramp up and work independently",
       "Performed cross-browser testing across Chrome, Firefox, Safari, and Edge",
-      "Mentored 2 junior testers, accelerating their productivity by 40%",
       "Implemented shift-left testing practices with Product and Dev teams",
-      "Reduced production incidents by 90% through root cause analysis",
       "Led performance testing initiative using JMeter"
     ],
     technologies: ["Playwright", "JMeter", "Postman", "TypeScript", "Agile"]
   },
   {
-    company: "Tamkeen Technology",
+    company: "Tamkeen Technologies",
+    position: "Senior QA Engineer",
+    period: "Oct 2022 - Aug 2024",
+    location: "Riyadh, Saudi Arabia",
+    description: "Designed test coverage and validated system integrations across functional and API layers.",
+    achievements: [
+      "Designed comprehensive test cases covering functional, integration, and edge case scenarios",
+      "Conducted RESTful API testing with Postman collections validating data integrity and system integrations",
+      "Collaborated with developers to reproduce and debug complex issues, reducing average bug resolution time"
+    ],
+    technologies: ["Postman", "Jira", "API Testing", "Agile"]
+  },
+  {
+    company: "Tamkeen Technologies",
+    position: "QA Engineer",
+    period: "Nov 2021 - Oct 2022",
+    location: "Riyadh, Saudi Arabia",
+    description: "Executed manual testing, defect tracking, and release validation.",
+    achievements: [
+      "Executed test cases with high accuracy in test execution and defect reporting",
+      "Performed smoke testing after each deployment, preventing faulty releases from reaching staging",
+      "Maintained test documentation in Zephyr Scale, ensuring full traceability of testing activities",
+      "Logged and tracked defects in Jira with detailed reproduction steps, screenshots, and severity"
+    ],
+    technologies: ["Jira", "Zephyr Scale", "Smoke Testing", "Manual Testing"]
+  },
+  {
+    company: "Tamkeen Technologies",
     position: "Laravel Developer",
     period: "Sep 2020 - Nov 2021",
     location: "Riyadh, Saudi Arabia",
@@ -50,7 +77,7 @@ const experiences = [
     company: "Lam Firm",
     position: "Developer",
     period: "Jan 2020 - Mar 2020",
-    location: "Saudi Arabia",
+    location: "Khobar, Saudi Arabia",
     description: "Front-end development creating user interfaces and components.",
     achievements: [
       "Developed and maintained front-end components and user interfaces",
@@ -62,7 +89,7 @@ const experiences = [
     company: "Al Arabi Heavy Equipment Company",
     position: "Help Desk",
     period: "Feb 2013 - Aug 2015",
-    location: "Saudi Arabia",
+    location: "Khobar, Saudi Arabia",
     description: "IT support providing technical assistance and troubleshooting.",
     achievements: [
       "Provided technical support and troubleshooting",
@@ -111,7 +138,7 @@ const Experience = () => {
             Work Experience
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            From IT support to senior QA engineer, my journey has been driven by a passion for quality and continuous improvement.
+            From IT support to lead QA engineer, my journey has been driven by a passion for quality and continuous improvement.
           </p>
         </motion.div>
 

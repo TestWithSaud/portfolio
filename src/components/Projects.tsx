@@ -8,9 +8,9 @@ const projects = [
     description: "Shift regression testing from manual to automated to reduce testing cycles and improve efficiency.",
     technologies: ["Playwright", "TypeScript"],
     impact: [
-      "Reduced regression testing time by ~40% through Playwright automation",
+      "Significantly reduced regression testing time through Playwright automation",
       "Performed cross-browser testing across Chrome, Firefox, Safari, and Edge",
-      "Mentored 2 junior testers, accelerating their productivity by 40%",
+      "Mentored 2 junior testers, helping them ramp up and work independently",
     ],
     category: "Web Automation",
     type: "Professional",
@@ -21,7 +21,7 @@ const projects = [
     technologies: ["JMeter"],
     impact: [
       "Identified critical bottlenecks that improved page load time",
-      "Reduced similar production incidents by 90% through root cause analysis",
+      "Reduced recurring production incidents through root cause analysis",
       "Implemented shift-left testing practices with Product and Dev teams",
     ],
     category: "Performance",
